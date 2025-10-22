@@ -6,7 +6,12 @@ from sqlalchemy.orm import sessionmaker
 # ⚙️  Direct Database URL (edit your credentials below)
 # ---------------------------------------------------
 
-DATABASE_URL = URL
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+DATABASE_URL = os.getenv("DATABASE_URL")
+
 # Create SQLAlchemy engine
 engine = create_engine(DATABASE_URL)
 
