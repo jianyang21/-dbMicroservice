@@ -1,1 +1,22 @@
+<<<<<<< HEAD
 
+=======
+# --- Python cache & build files ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Virtual environment ---
+venv/
+.env
+.env.*
+.env/
+
+# --- IDE files ---
+.idea/
+.vscode/
+
+# --- OS files ---
+.DS_Store
+>>>>>>> 3e5c3fe (Updated database.py to use .env and added .gitignore)
